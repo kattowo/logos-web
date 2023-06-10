@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+   <!--  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script> -->
+    <title>Document</title>
+</head>
+<body>
+
+    <section class="w-full h-screen bg-[crimson] flex justify-center items-center">
+      section 1
+    </section>
+    <section class="w-full h-screen bg-[tomato] flex justify-center items-center ">
+      section 2
+    </section>
+
+
+    <section id="logos" class="overflow-hidden p-8 bg-[#222] w-full h-screen m-auto ">
+        <h2 class="text-left uppercase font-bold text-orange-500 m-2 text-center">Diseño de Identidad Gráfica</h2>
+        <section class="overflow-hidden text-gray-700  m-auto ">
+            <div class="container m-auto  ">
+              <div class="flex flex-col place-content-center md:flex md:flex-row md:m-auto absolute left-0 ">
+    
+                <a href="#logos" v-on:click="mostrar = !mostrar">
+                    <div class="flex place-content-center" >
+                        <div class="transition ease-in-out hover:scale-125 w-full p-1 md:p-2">
+                              <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg" src="https://kennyattow.com/wp-content/uploads/2022/07/2fort-training.png">
+                        </div>
+                    </div>
+                </a>
+             
+                <a href="#logos" v-on:click="mostrar2 = !mostrar2">
+                <div class="flex place-content-center">
+                  <div class="transition ease-in-out hover:scale-125 w-full p-1 md:p-2">
+                    <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg" src="https://kennyattow.com/wp-content/uploads/2022/04/mi-angel-education.png">
+                  </div>
+                </div>
+                </a>
+                
+                <a href="#logos" v-on:click="mostrar3 = !mostrar3">
+                  <div class="flex place-content-center" >
+                    <div class="transition ease-in-out hover:scale-125 w-full p-1 md:p-2">
+                      <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg" src="https://kennyattow.com/wp-content/uploads/2022/04/en-nivel-purpura.png">
+                    </div>
+                  </div>
+                </a> 
+                
+                <a href="#logos" v-on:click="mostrar4 = !mostrar4">
+                  <div class="flex place-content-center" >
+                    <div class="transition ease-in-out hover:scale-125 w-full p-1 md:p-2">
+                      <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg" src="https://kennyattow.com/wp-content/uploads/2022/04/nucette-consulting.png">
+                    </div>
+                  </div>
+                </a>
+                
+                <a href="#logos" v-on:click="mostrar5 = !mostrar5">
+                 <div class="flex place-content-center" >
+                  <div class="transition ease-in-out hover:scale-125 w-full p-1 md:p-2">
+                    <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg" src="https://kennyattow.com/wp-content/uploads/2022/04/CGL-great-line.png">
+                  </div>
+                </div>
+                </a>
+
+                <a href="#logos" v-on:click="mostrar6 = !mostrar6">
+
+                  <div class="flex place-content-center" >
+                    <div class="transition ease-in-out hover:scale-125 w-full p-1 md:p-2">
+                      <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg" src="https://kennyattow.com/wp-content/uploads/2022/04/yerly-coach.png">
+                    </div>
+                  </div>
+                </a>
+                
+                <a href="#logos" v-on:click="mostrar7 = !mostrar7" class="transition duration-300 ease-in-out ">
+                  
+                  <div class="flex place-content-center">
+                    <div class="transition ease-in-out hover:scale-125 w-full mt-4 p-1 md:p-2">
+                      <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg" src="https://kennyattow.com/wp-content/uploads/2022/08/Logo_MSE_202.png">
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+        </section>
+
+          <section class="
+          flex
+          flex-col
+          place-content-center
+          items-center          
+          w-full
+          h-screen               
+          text-orange-500
+          bg-zinc-800
+          opacity-100
+          mx-auto
+          relative
+                    
+          "
+          v-show="!mostrar"
+         
+          >
+          <a href="#logos" v-on:click="mostrar = !mostrar" class="flex flex-col opacity-90 border-solid border-2 border-amber-700 p-8 rounded-lg shadow-2xl shadow-amber-900 opacity-10 transition duration-300 ease-in-out max-w-[20rem]" >
+
+              <img src="https://kennyattow.com/wp-content/uploads/2022/07/2fort-training.png">
+              
+              <div class="text-gray-300 flex flex-col item-left m-auto ">                
+                <p>Academia de Entrenamiento Football Soccer. </p>
+                <div class="flex gap-4">
+                  <p>Pais:</p>
+                  <img src="https://kennyattow.com/wp-content/uploads/2023/06/usunitedstatesflag_111929.svg" class="w-[2rem]">
+                </div>  
+              </div>
+            </a>
+          </section>
+          
+          <section class="
+          flex
+          flex-col
+          place-content-center
+          items-center          
+          w-full
+          h-full               
+          text-orange-500
+          bg-zinc-800
+          opacity-100
+          mx-auto
+          relative
+          "
+          v-show="!mostrar2"         
+          >
+
+              <a href="#logos" v-on:click="mostrar2 = !mostrar2" class="flex flex-col opacity-90 border-solid border-2 border-amber-700 p-8 rounded-lg shadow-2xl shadow-amber-900 opacity-10 transition duration-300 ease-in-out max-w-[20rem]" >
+
+                  <img src="https://kennyattow.com/wp-content/uploads/2022/04/mi-angel-education.png">
+                  
+                  <div class="text-gray-300 flex flex-col item-left m-auto ">                
+                    <p>Marca personal de la educadora particular Nitza Dalmau</p>
+                    <div class="flex gap-4">
+                      <p>Pais:</p>
+                      <img src="https://kennyattow.com/wp-content/uploads/2023/06/usunitedstatesflag_111929.svg" class="w-[2rem]">
+                    </div>  
+                  </div>
+                </a>
+          </section>
+
+          <section class="
+          flex
+          flex-col
+          place-content-center
+          items-center          
+          w-full
+          h-full               
+          text-orange-500
+          bg-zinc-800
+          opacity-100
+          mx-auto
+          relative
+          "
+          v-show="!mostrar3"
+         
+          >
+            <a href="#logos" v-on:click="mostrar3 = !mostrar3" class="flex flex-col opacity-90 border-solid border-2 border-amber-700 p-8 rounded-lg shadow-2xl shadow-amber-900 opacity-10 transition duration-300 ease-in-out max-w-[20rem]" >
+
+                <img src="https://kennyattow.com/wp-content/uploads/2022/04/en-nivel-purpura.png">
+                
+                <div class="text-gray-300 flex flex-col item-left m-auto ">                
+                  <p>Emprendimiento para la formacion de habitos profesionales en la busqueda por la excelencia y el equilibrio personal. </p>
+                  <div class="flex gap-4">
+                    <p>Pais:</p>
+                    <img src="https://kennyattow.com/wp-content/uploads/2023/06/usunitedstatesflag_111929.svg" class="w-[2rem]">
+                  </div>  
+                </div>
+            </a>
+          </section>
+          
+          <section class="
+          flex
+          flex-col
+          place-content-center
+          items-center          
+          w-full
+          h-full               
+          text-orange-500
+          bg-zinc-800
+          opacity-100
+          mx-auto
+          relative
+          p-[2rem]
+          "
+          v-show="!mostrar4"         
+          >
+
+          <a href="#logos" v-on:click="mostrar4 = !mostrar4" class="flex flex-col opacity-90 border-solid border-2 border-amber-700 p-8 rounded-lg shadow-2xl shadow-amber-900 opacity-10 transition duration-300 ease-in-out max-w-[20rem]" >
+
+              <img src="https://kennyattow.com/wp-content/uploads/2022/04/nucette-consulting.png">
+              
+              
+              <div class="text-gray-300 flex flex-col item-left m-auto ">                
+                <p>Identidad Gráfica para el buffete de consultoria de seguros </p>                
+                <div class="flex gap-4">
+                  <p>Pais:</p>
+                  <img src="https://kennyattow.com/wp-content/uploads/2023/06/usunitedstatesflag_111929.svg" class="w-[2rem]">
+                </div>  
+              </div>
+            </a>
+          </section>
+
+          <section class="
+          flex
+          flex-col
+          place-content-center
+          items-center          
+          w-full
+          h-full               
+          text-orange-500
+          bg-zinc-800
+          opacity-100
+          mx-auto
+          relative
+          "
+          v-show="!mostrar5"
+         
+          >
+          <a href="#logos" v-on:click="mostrar5 = !mostrar5" class="flex flex-col opacity-90 border-solid border-2 border-amber-700 p-8 rounded-lg shadow-2xl shadow-amber-900 opacity-10 transition duration-300 ease-in-out max-w-[20rem]" >
+
+              <img src="https://kennyattow.com/wp-content/uploads/2022/04/CGL-great-line.png">
+              
+              <div class="text-gray-300 flex flex-col item-left m-auto ">                
+                <p>Empresa de transporte y encomiendas a nivel nacional</p>
+                <div class="flex gap-4">
+                  <p>Pais:</p>
+                  <img src="https://kennyattow.com/wp-content/uploads/2023/06/Flag_of_Ecuador.svg.png" class="w-[2rem]">
+                </div>  
+              </div>
+            </a>
+          </section>
+
+          <section class="
+          flex
+          flex-col
+          place-content-center
+          items-center          
+          w-full
+          h-full               
+          text-orange-500
+          bg-zinc-800
+          opacity-100
+          mx-auto
+          relative
+          "
+          v-show="!mostrar6"
+         
+          >
+          <a href="#logos" v-on:click="mostrar6 = !mostrar6" class="flex flex-col opacity-90 border-solid border-2 border-amber-700 p-8 rounded-lg shadow-2xl shadow-amber-900 opacity-10 transition duration-300 ease-in-out max-w-[20rem]" >
+
+              <img src="https://kennyattow.com/wp-content/uploads/2022/04/yerly-coach.png">
+              
+              <div class="text-gray-300 flex flex-col item-left m-auto ">               
+                <p>Marca Personal del entrenador deportivo Yerly Briceño</p>
+                <div class="flex gap-4">
+                  <p>Pais:</p>
+                  <img src="/usunitedstatesflag_111929.svg" class="w-[2rem]">
+                </div>  
+              </div>
+            </a>
+          </section>
+        
+          
+          <section class="
+          flex
+          flex-col
+          place-content-center
+          items-center          
+          w-full
+          h-full               
+          text-orange-500
+          bg-zinc-800
+          opacity-100
+          mx-auto
+          relative
+          "
+          v-show="!mostrar7"
+         
+          >
+          <a href="#logos" v-on:click="mostrar7 = !mostrar7" class="flex flex-col opacity-90 border-solid border-2 border-amber-700 p-8 rounded-lg shadow-2xl shadow-amber-900 opacity-10 transition duration-300 ease-in-out max-w-[25rem] min-w-[22rem] relative" >
+
+              <img src="https://kennyattow.com/wp-content/uploads/2022/08/Logo_MSE_202.png">
+              
+              <div class="text-gray-300 flex flex-col item-left m-auto ">                
+                <p> Revista electrónica y espacio de participación para el desarrollo de la mujer. </p>
+                <div class="flex gap-4">
+                  <p>Pais:</p>
+                  <img src="https://kennyattow.com/wp-content/uploads/2023/06/chile.svg" class="w-[2rem]">
+                </div>  
+              </div>
+          </a>
+            
+          </section>
+    </section>
+
+    <script>
+        new Vue({
+            el:'#logos',
+            data: {
+                mostrar: true,
+                mostrar2: true,
+                mostrar3: true,
+                mostrar4: true,
+                mostrar5: true,
+                mostrar6: true,
+                mostrar7: true,
+            }
+        });
+    </script>
+
+
+
+</body>
+</html>
+</html>
